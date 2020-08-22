@@ -1,0 +1,179 @@
+.Text-Style-7 {
+    font-family: GothamPro;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.03;
+    letter-spacing: 1.2px;
+    text-align: left;
+    color: var(--white);
+  }
+  
+  .Header-LoginRegister-Logo-Mob {
+    font-family: GothamPro;
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.54;
+    letter-spacing: 0.96px;
+    text-align: center;
+    color: var(--pale-grey);
+  }
+  
+  .Header-Dashboard-Logo-Mob {
+    font-family: GothamPro;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.39;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: var(--pale-grey);
+  }
+  
+  .Header-LoginRegister-Tagline-Mob {
+    font-family: GothamPro;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.39;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color: var(--pale-grey);
+  }
+  
+  .placeholderInputTitle {
+    font-family: GothamPro;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.36;
+    letter-spacing: 0.84px;
+    text-align: left;
+    color: var(--light-blue-grey);
+  }
+  
+  .auth-title {
+    font-family: GothamPro;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.43;
+    letter-spacing: 0.56px;
+    text-align: center;
+    color: var(--greyish-brown);
+  }
+  
+  .Header-Dashboard-UserName-Mob {
+    font-family: GothamPro;
+    font-size: 13px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.69;
+    letter-spacing: 0.52px;
+    text-align: center;
+    color: var(--pale-grey);
+  }
+  
+  .button-reset-text {
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.69;
+    letter-spacing: 0.78px;
+    text-align: center;
+    color: var(--dark-grey-blue);
+  }
+  
+  .button-name {
+    font-family: Verdana;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.69;
+    letter-spacing: 0.78px;
+    text-align: center;
+    color: var(--white);
+  }
+  
+  .Text-Style-9 {
+    font-family: GothamPro;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.78px;
+    text-align: center;
+    color: var(--white);
+  }
+  
+  .placeholder-input-desc {
+    font-family: GothamPro;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.54;
+    letter-spacing: 0.78px;
+    text-align: left;
+    color: var(--greyish-brown);
+  }
+  
+  .input-placeholder {
+    font-family: GothamPro;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 4.69;
+    letter-spacing: 0.78px;
+    text-align: left;
+    color: var(--greyish-brown);
+  }
+  
+  .data-picker-text {
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 5.08;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: var(--dark-navy-blue);
+  }
+  
+  .login-password-title {
+    font-family: Verdana;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 5.08;
+    letter-spacing: 0.72px;
+    text-align: left;
+    color: var(--black);
+  }
+  
+  .Text-Style-10 {
+    font-family: GothamPro;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 5.08;
+    letter-spacing: 0.48px;
+    text-align: left;
+    color: var(--white);
+  }

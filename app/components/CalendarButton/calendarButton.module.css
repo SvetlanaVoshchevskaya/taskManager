@@ -1,0 +1,53 @@
+a {
+    text-decoration: none; 
+}
+
+.btnCalendar {
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+  	line-height:35px;
+	margin: 30px auto;
+	width: 250px;
+	height: 35px;
+	box-shadow: 0px 6px 10px 0 var(--dusty-orange-33);
+	background-color: var(--dusty-orange);
+	border: 0px;
+	border-radius: 5px;
+	outline: 0;
+	font-family: Verdana;
+	font-size: 13px;
+	font-weight: bold;
+  color: var(--white); 
+}
+
+.btnCalendarText {
+  padding-left: 10px;
+}
+
+.calendarBtnIcon {
+	background-color: var(--white);
+	border: 0;
+	outline: 0;
+}
+
+.calendarSVG {
+	fill: #fff;
+}
+
+.btnCalendar:focus {
+	box-shadow: 0 0 1px 1px var(--dusty-orange);
+}
+
+.oneDayTaskBtn {
+	widows: 20px;
+	height: 20px;
+	border: 1px solid var(--dusty-orange);
+	border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+	.btnCalendar {
+		margin: 40px 0;
+	}
+}

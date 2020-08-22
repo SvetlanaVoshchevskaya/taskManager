@@ -1,0 +1,155 @@
+.infoContainer {
+  width: 295px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: var(--dark-grey-blue);
+  height: 40px;
+  position: relative;
+}
+
+.svgInfo {
+  width: 19px;
+  height: 19px;
+  opacity: 0.5;
+  fill: var(--pale-grey);
+}
+
+.titleInfo {
+  font-family: var(--primaryFontFamily);
+  font-size: var(--mobileFontSize);
+  text-align: center;
+  color: var(--pale-grey);
+  margin: 10px;
+}
+
+.buttonClose {
+  position: absolute;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.svgClear {
+  fill: var(--pale-grey);
+  opacity: 0.5;
+  width: 15px;
+}
+
+.contentInfo {
+  background-color: var(--white);
+}
+
+.list {
+  list-style: none;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+}
+
+.text {
+  width: 160px;
+  font-family: GothamPro;
+  font-size: var(--mobileFontSize);
+  font-weight: 300; 
+  color: var(--greyish-brown);
+}
+
+.iconContainer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--dusty-orange);
+  color: var(--white);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  width: 20px;
+  height: 18px;
+  text-align: center;
+  color: var(--dusty-orange);
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  border-radius: 5px;
+  border: solid 1px var(--dusty-orange);
+}
+
+.numberOrange {
+  color: var(--dusty-orange);
+  border: solid 1px var(--dusty-orange);
+}
+
+.numberGreen {
+  color: var(--green);
+  border: solid 1px var(--green);
+}
+
+.hyphen {
+  margin: 10px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .infoContainer {
+    width: 470px;
+  }
+
+  .titleInfo {
+    font-size: 16px;
+  }
+
+  .title {
+    font-family: var(--primaryFontFamily);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #010101;
+    padding-top: 20px;
+    margin: 0;
+  }
+
+  .text {
+    font-size: 16px;
+    width: 200px;
+  }
+}

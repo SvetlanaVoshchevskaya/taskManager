@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: GothamPro;
+  font-size: 13px;
+  color: #444;
+}
+
+.Calendar {
+  padding: 0 10%;
+  /* width: 290px;
+  height: 340px; */
+  width: 100%;
+  margin: 25px auto 0;
+}
+
+.Calendar-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Calendar-header {
+  font-family: GothamPro;
+  font-size: 13px;
+  font-weight: 900;
+  height: 40px;
+  color: #000;
+  text-align: center;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Calendar-header button {
+  width: 50px;
+  font-size: 20px;
+  border: 0;
+  background: transparent;
+  color: #ddd;
+  cursor: pointer;
+  outline: 0;
+}
+
+.Calendar-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.Calendar-grid-item {
+  flex: 0 14.28571%;
+  padding: 5px 0;
+  height: 50px;
+  border-right: 1px dashed #ddd;
+  border-bottom: 1px dashed #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Calendar-grid-item--current {
+  background-color: var(--light-periwinkle);
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.Calendar-grid-item.nextMonth,
+.Calendar-grid-item.prevMonth {
+  color: #999;
+}
+
+.Calendar-grid-item:nth-child(7n + 1) {
+  border-left: 1px solid #ddd;
+}
+
+.Calendar-grid-item:nth-child(-n + 7) {
+  border-top: 1px solid #ddd;
+}
+
+.Calendar-tasksWrapper {
+ display: flex;
+ position: relative;
+ width: 34px;
+ height: 15px;
+ /* justify-content:space-between; */
+}
+
+.Calendar-oneDayTaskBtn {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  font-size: 10px;
+  width: 16px;
+  height: 14px;
+	border: 1px solid var(--dusty-orange);
+  border-radius: 5px;
+  text-align: center;
+
+}
+
+.Calendar-repitedTasksBtn {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  width: 16px;
+  height: 14px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media(min-width: 768px) {
+  .Calendar {
+    /* width: 394px;
+    height: 340px; */
+    margin: 44px auto 0;
+  }
+
+}
+@media(min-width: 1280px) {
+  .Calendar {
+    margin-top: 67px;
+  }
+}

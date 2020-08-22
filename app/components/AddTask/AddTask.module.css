@@ -1,0 +1,254 @@
+.bodybg {
+  height: calc(100vh - 180px);
+  width: 100vw;
+  background-color: var(--pale-grey);
+  margin: 0 auto;
+}
+
+.formBg {
+  max-width: 400px;
+  box-shadow: 0px 3px 3px 0 rgba(1, 1, 0, 0.15);
+  background-color: var(--white);
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  width: 264px;
+  height: 45px;
+  border: none;
+  border-bottom: solid 1px var(--light-periwinkle);
+}
+
+.title::placeholder {
+  width: 228px;
+  font-family: 'Gotham Pro Bold';
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 3.5;
+  letter-spacing: 0.84px;
+  text-align: left;
+  color: var(--light-blue-grey);
+}
+
+.formIcon {
+  width: 20px;
+  height: 20px;
+  fill: var(--dusty-orange);
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.formIconDelete {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+}
+
+.dataPickerContainer {
+  display: inline-block;
+  width: 264px;
+  border: none;
+  border-bottom: solid 1px var(--light-periwinkle);
+}
+
+.dataPickerTitle {
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 5.08;
+  letter-spacing: 0.72px;
+  text-decoration: none;
+  align-items: center;
+  color: var(--dark-navy-blue);
+}
+
+.labelDescription {
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 5.08;
+  letter-spacing: 0.72px;
+  text-align: left;
+  color: var(--black);
+}
+
+.textArea {
+  width: 264px;
+  resize: none;
+  height: 177px;
+  border-radius: 5px;
+  border: solid 1px var(--light-periwinkle);
+  padding: 5px;
+}
+
+.textArea::placeholder {
+  font-family: 'GothamPro';
+  font-size: 13px;
+  font-weight: 300;
+  padding-top: 10px;
+  line-height: 1;
+  letter-spacing: 0.78px;
+  color: var(--greyish-brown);
+  padding-left: 5px;
+}
+
+
+.resetBtn,
+.saveBtn {
+  width: 135px;
+  height: 35px;
+  border-radius: 5px;
+  border: solid 1px var(--dark-grey-blue);
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 3px;
+  font-family: Verdana;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.78px;
+  text-align: center;
+  color: var(--dark-grey-blue);
+  margin-top: 20px
+}
+
+.battonContainer {
+  display: flex;
+}
+
+.resetBtn:hover,
+.saveBtn:hover {
+  box-shadow: 0px 6px 10px 0 var(--dusty-orange-33);
+  background-color: var(--dusty-orange);
+  border: none;
+  color: var(--white);
+}
+
+.errorSpan {
+  color: var(--red);
+  font-family: Verdana;
+  font-size: 11px;
+}
+
+
+@media (min-width:768px) and (max-width:1279px) {
+  .bodybg {
+    height: calc(100vh - 87px);
+    width: 100vw;
+    display: flex;
+  }
+
+  .formBg {
+    min-width: 700px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .title {
+    width: 600px;
+    height: 40px;
+    margin-left: 45px
+  }
+
+  .title::placeholder {
+    width: 220px;
+    font-size: 24px;
+    line-height: 2.3;
+    letter-spacing: 1.44px;
+  }
+
+  .dataPickerContainer {
+    width: 600px;
+    margin-left: 45px
+  }
+
+  .labelDescription {
+    display: block;
+    margin-left: 45px
+  }
+
+  .textArea {
+    width: 600px;
+    height: 99px;
+    margin-left: 45px
+  }
+
+ .saveBtn {
+    position: absolute;
+    bottom: 2%;
+    left: 26%;
+  }
+
+  .resetBtn {
+    position: absolute;
+    bottom: 2%;
+    left: 49%;
+  }
+
+}
+
+@media (min-width:1280px) {
+  .bodybg {
+    height: calc(100vh - 87px);
+    display: flex;
+  }
+
+  .formBg {
+    min-width: 850px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+  }
+
+  .title {
+    width: 730px;
+    margin-left: 80px
+  }
+
+  .title::placeholder {
+    width: 220px;
+    font-size: 24px;
+    line-height: 2.54;
+    letter-spacing: 1.44px;
+  }
+
+  .dataPickerContainer {
+    width: 730px;
+    margin-left: 80px
+  }
+
+  .labelDescription {
+    display: block;
+    margin-left: 80px
+  }
+
+  .textArea {
+    width: 730px;
+    height: 99px;
+    margin-left: 80px
+  }
+
+  .saveBtn {
+    position: absolute;
+    bottom: 2%;
+    left: 32%;
+  }
+
+  .resetBtn {
+    position: absolute;
+    bottom: 2%;
+    left: 49%;
+  }
+
+}

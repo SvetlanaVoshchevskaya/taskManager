@@ -1,0 +1,198 @@
+.wrapperForLogin {
+  width: 100%;
+  background-color: var(--dark-grey-blue);
+  background: url(../../images/bg-header.jpg) no-repeat top center fixed;
+}
+
+.wrapperForDashboard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--dark-grey-blue);
+}
+
+.LoginRegisterLogo {
+  margin: 0;
+  padding-top: 18px;
+}
+
+.LoginRegisterTagline {
+  margin: 0;
+}
+
+
+
+.DashboardLogo {
+  padding: 0 15px;
+  position: relative;
+}
+
+.informBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: var(--light-blue-grey);
+  border: 0;
+  padding: 25px;
+}
+
+.informSign {
+  fill: var(--pale-grey);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.informSignWrapper {
+  padding: 0 15px;
+  line-height: 1;
+}
+
+.searchWrapper {
+  position: relative;
+  fill: var(--pale-grey);
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 1;
+}
+
+/* .searchWrapper::before {
+  position: absolute;
+  height: 30px;
+  transform: translateY(-18%);
+  left: 0;
+  border-right:  2px solid var(--pale-grey);
+  content: "";
+} */
+
+.calendarSign {
+  position: relative;
+  fill: var(--pale-grey);
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 1;
+}
+
+.calendarSign::after {
+  position: absolute;
+  height: 30px;
+  transform: translateY(-11%);
+  right: 0;
+  border-right:  2px solid var(--pale-grey);
+  content: "";
+}
+
+.logoutSign {
+  position: relative;
+  fill: var(--pale-grey);
+  cursor: pointer;
+  padding: 0 15px;
+  line-height: 1;
+}
+
+.logoutSign::before {
+  position: absolute;
+  height: 30px;
+  transform: translateY(-11%);
+  left: 0;
+  border-right:  2px solid var(--pale-grey);
+  content: "";
+}
+
+.exitWord {
+  display: none;
+  cursor: pointer;
+}
+
+.UserNameLetter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-width: 2px;
+  border-color: var(--pale-grey);
+  border-style: solid;
+  border-radius: 50%;
+  line-height: 21px;
+  width: 21px;
+  height: 21px;
+  margin: 0 15px;
+}
+
+.UserName {
+  display: none;
+  padding-right: 15px;
+}
+
+.exitBtn {
+  width: 21px;
+  height: 21px;
+  fill: var(--pale-grey);
+  padding-top: 3px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 30px;
+}
+
+@media (min-width: 768px) {
+  .wrapperForDashboard {
+    flex-wrap: nowrap;
+  }
+
+  .exitWord {
+    display: inline;
+    padding-right: 15px;
+  }
+
+  .informBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: auto;
+    height: auto;
+    order: 1;
+    flex-grow: 1;
+    text-align: left;
+    box-shadow: none;
+    background-color: inherit;
+
+  }
+
+  .nav {
+    order: 2;
+  }
+
+  .UserName {
+    display: inline;
+  }
+
+  .DashboardLogo::after {
+    position: absolute;
+    height: 30px;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+    border-right:  2px solid var(--pale-grey);
+    content: "";
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapperForLogin {
+   background-size: contain;
+  }
+
+}

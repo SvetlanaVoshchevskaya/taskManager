@@ -1,0 +1,220 @@
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.task {
+	/* set fixed width to test */
+	/* width: 296px; */
+	/* margin: 0 auto;             !!!!!!!!!!!!!!! */
+	box-shadow: 0px 2px 2px 0px rgba(1, 1, 0, 0.15);
+	border-radius: 5px;
+	background-color: var(--white);
+}
+
+.taskHeader {
+	display: flex;
+	flex-direction: row;
+	background-color: var(--dark-grey-blue);
+	color: var(--white);
+	font-family: var(--primaryFontFamily), sans-serif;
+	font-size: var(--mobileFontSize);
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: 0.48px;
+	text-align: left;
+	border-radius: 5px 5px 0 0;
+	padding: 6px 1.3em 6px;
+}
+
+.taskHeaderInactive {
+	composes: taskHeader;
+	background-color: var(--grey);
+}
+
+.numberContainer {
+	flex-basis: 2em;
+}
+
+.taskBody {
+	font-family: var(--primaryFontFamily), sans-serif;
+	font-size: var(--mobileFontSize);
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.41666666667;
+	letter-spacing: 0.48px;
+	text-align: left;
+	color: var(--greyish-brown);
+
+	padding: 16px 1.3em 6px;
+}
+
+.taskControls {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 1.3em 16px;
+}
+
+.taskControls button {
+	display: inline-block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	border: 1px solid var(--light-blue-grey);
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: var(--white);
+	margin-right: 0.5em;
+}
+
+.taskControlsRepeatBtnInactive svg {
+	fill: var(--grey);
+}
+
+.taskControlsRepeatBtnInactive:hover {
+	cursor: default;
+}
+
+.taskControlsRepeat{
+  /* width:25%; */
+  display:flex;
+  align-items: center;
+}
+
+.taskControlsDates {
+	display: inline-block;
+	font-family: var(--secondaryFontFamily), sans-serif;
+	font-size: var(--secondarymobileFontSize);
+	color: var(--dark-grey-blue);
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.taskControlsDatesInactive {
+	composes: taskControlsDates;
+	color: var(--grey);
+}
+
+.taskControls button > svg {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 12px;
+	height: 18px;
+}
+
+.taskControlsRepeatInactive svg {
+	fill: var(--grey);
+}
+
+.taskControlsCompleteContainer {
+	display: flex;
+	align-items: center;
+}
+
+.taskControlsDone {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.taskControlsDone svg {
+	width: 14px;
+	height: 14px;
+	fill: var(--green);
+}
+.taskControlsDoneInactive {
+	composes: taskControlsDone;
+}
+
+.taskControlsDoneInactive svg {
+	fill: var(--grey);
+}
+
+.taskControlsDoneInactive:hover {
+	cursor: default;
+}
+
+.taskControlsEdit {
+	margin-right: 1em;
+}
+
+.taskControlsEdit svg {
+	width: 14px;
+	height: 14px;
+	fill: var(--dusty-orange);
+}
+
+@media (min-width: 768px) {
+	.task {
+		/* set fixed width to test */
+		/* width: 580px; */
+	}
+	.taskHeader {
+		font-size: var(--tabletFontSize);
+		padding-top: 10px;
+		padding-bottom: 8px;
+		padding-left: 2.5em;
+	}
+	.taskBody {
+		font-family: var(--primaryFontFamily), sans-serif;
+		font-size: var(--tabletFontSize);
+		padding-top: 22px;
+		padding-bottom: 12px;
+		padding-right: 2.5em;
+		padding-left: 2.5em;
+	}
+	.taskControls {
+		padding: 0px 2.5em 16px;
+	}
+	.taskControls button {
+		flex: none;
+		width: 34px;
+		flex-basis: 34px;
+		height: 34px;
+	}
+	.taskControlsEdit + p {
+		color: var(--dusty-orange);
+	}
+	.taskControlsDone + p {
+		color: var(--green);
+	}
+	.taskControlsDoneInactive + p {
+		color: var(--grey);
+	}
+}
+@media (min-width: 1280px) {
+	.task {
+		/* width: 580px; */
+	}
+	.taskHeader {
+		font-size: var(--tabletFontSize);
+		padding-top: 10px;
+		padding-bottom: 8px;
+		padding-left: 2.5em;
+	}
+	.taskBody {
+		font-family: var(--primaryFontFamily), sans-serif;
+		font-size: var(--tabletFontSize);
+		padding-top: 22px;
+		padding-bottom: 12px;
+		padding-right: 2.5em;
+		padding-left: 2.5em;
+	}
+	.taskControls {
+		padding: 0px 2.5em 16px;
+	}
+	.taskControls button {
+		flex: none;
+		width: 34px;
+		height: 34px;
+	}
+}

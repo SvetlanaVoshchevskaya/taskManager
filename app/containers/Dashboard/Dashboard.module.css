@@ -1,0 +1,21 @@
+
+.wrapper {
+	padding-top: 20px;
+	background-color: var(--pale-grey);
+}
+
+.loader {
+	position: absolute;
+	position: absolute;
+    top: 30%;  
+    left: 50%; 
+    transform: translate(-50%, -30%);
+}
+
+
+@media (min-width: 768px) {
+	.wrapper {
+		padding-top: 0;
+	} 
+
+}
